@@ -58,6 +58,7 @@ FROM health.user_logs;
   FROM health.user_logs
   GROUP BY 1;
   ```
+---
 
 ![Question 2](https://img.shields.io/badge/Question-2-BC4E99)
 ### **How many total measurements do we have per user on average?**
@@ -85,7 +86,7 @@ FROM user_measure_count;
 |----------------------------------------|
 |2                                       |
 
-
+---
 
 ![Question 4](https://img.shields.io/badge/Question-4-BC4E99)
 ### **How many users have 3 or more measurements?**
@@ -99,6 +100,7 @@ WHERE measure_count >= 3;
 |----------------------------------------|
 |209                                     |
 
+---
 
 ![Question 5](https://img.shields.io/badge/Question-5-BC4E99)
 ### **How many users have 1,000 or more measurements?**
