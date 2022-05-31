@@ -96,3 +96,44 @@ WHERE measure = 'blood_glucose';
 +───────+
 |325    |
 +───────+
+
+-- 7. Have at least 2 types of measurements?
+SELECT 
+  COUNT(*)
+FROM user_measure_count
+WHERE unique_measures >= 2;
+
+--Result:
++───────+
+|count  |
++───────+
+|204    |
++───────+
+
+-- 8. Have all 3 measures - blood glucose, weight and blood pressure?
+SELECT
+  COUNT(*)
+FROM user_measure_count
+WHERE unique_measures = 3;
+
+--Result:
++───────+
+|count  |
++───────+
+|50     |
++───────+
+
+
+-- 9. What is the median systolic/diastolic blood pressure values?
+SELECT
+  PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY systolic) AS median_systolic,
+  PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY diastolic) AS median_diastolic
+FROM health.user_logs
+WHERE measure = 'blood_pressure';
+
+--Result:
++─────────────────+──────────────────+
+|median_systolic  |median_diastolic  |
++─────────────────+──────────────────+
+|126              |79                |
++─────────────────+──────────────────+
