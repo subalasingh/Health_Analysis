@@ -3,7 +3,7 @@
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/subalasingh)
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/subalasingh?tab=repositories)
 
-# Health Analytics Case Study 
+# ⚕️Health Analytics Case Study 
 
 > This case study is contained within the [Serious SQL](https://www.datawithdanny.com) by [Danny Ma](https://www.linkedin.com/in/datawithdanny/)
 > 
@@ -177,11 +177,5 @@ WHERE measure = 'blood_pressure';
 |126            |79              |
 ---
 ## 💻 Key Highlight
-> **Initial thoughts:** 
-Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
 
-Some of the main areas covered in this case study, including:
-* **Sorting Values**
-* **Inspect Row Counts** 
-* **Duplicates & Record Frequency Review**
-* **Summary Statistics** `(MEAN, MEDIAN)`
+> Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
